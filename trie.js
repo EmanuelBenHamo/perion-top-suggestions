@@ -77,6 +77,10 @@ class Trie {
     }
 
     search(wordPrefix) {
+        if (!wordPrefix || !wordPrefix.length) {
+            return [];
+        }
+
         let currNode = this.root;
 
         for (var i = 0; i < wordPrefix.length; i++) {
