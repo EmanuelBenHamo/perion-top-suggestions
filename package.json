@@ -1,0 +1,27 @@
+{
+  "name": "perion-search-suggest",
+  "version": "1.0.0",
+  "description": "Suggested solution to Perion interview task - search suggest",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmanuelBenHamo/perion-top-suggestions.git"
+  },
+  "keywords": [
+    "search",
+    "suggest"
+  ],
+  "author": "Emanuel Ben Hamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmanuelBenHamo/perion-top-suggestions/issues"
+  },
+  "homepage": "https://github.com/EmanuelBenHamo/perion-top-suggestions#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
