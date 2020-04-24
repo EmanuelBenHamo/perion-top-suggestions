@@ -1,16 +1,16 @@
-var TrieNode = require('./trieNode');
+var TopKTrieNode = require('./topKTrieNode');
 
-class Trie {
-    constructor(topK) {
-        this.root = new TrieNode(null);
-        this.topK = topK;
+class TopKTrie {
+    constructor(k) {
+        this.root = new TopKTrieNode(null);
+        this.k = k;
     }
 
     buildFromDictionary(searchTermsMap) {
         Object.keys(searchTermsMap).forEach(searchTerm => {
             this.insert(searchTerm, searchTermsMap[searchTerm]);
         });
-        this.buildTopKTerms(this.root, this.topK);
+        this.buildTopKTerms(this.root, this.k);
     }
 
     buildTopKTerms(node, k) {
@@ -62,7 +62,7 @@ class Trie {
 
         for (var i = 0; i < word.length; i++) {
             if (!node.children[word[i]]) {
-                node.children[word[i]] = new TrieNode(word[i]);
+                node.children[word[i]] = new TopKTrieNode(word[i]);
             }
 
             node = node.children[word[i]];
@@ -96,4 +96,4 @@ class Trie {
     }
 }
 
-module.exports = Trie;
+module.exports = TopKTrie;

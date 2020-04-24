@@ -1,15 +1,15 @@
-const { loadCsvToJson } = require('./csvToJsonConverter');
-const Trie = require('./trie');
+const { loadCsvToJson } = require('../../csvToJsonConverter');
+const TopKTrie = require('../topKTrie');
 
-const csvFilePath = __dirname + '/data/SearchTermsDB.csv';
+const csvFilePath = './data/SearchTermsDB.csv';
 
-describe('trie', () => {
+describe('top k trie', () => {
     let searchTermsMap;
     beforeAll(async () => {
         searchTermsMap = await loadCsvToJson(csvFilePath);
     })
-    describe('topK = 3', () => {
-        const searchTermsTrie = new Trie(3);
+    describe('k = 3', () => {
+        const searchTermsTrie = new TopKTrie(3);
         beforeAll(async () => {
             searchTermsTrie.buildFromDictionary(searchTermsMap);
         })
@@ -28,8 +28,8 @@ describe('trie', () => {
             expect(actual).toEqual([]);
         })
     })
-    describe('topk = 0', () => {
-        const searchTermsTrie = new Trie(0);
+    describe('k = 0', () => {
+        const searchTermsTrie = new TopKTrie(0);
         beforeAll(async () => {
             searchTermsTrie.buildFromDictionary(searchTermsMap);
         })

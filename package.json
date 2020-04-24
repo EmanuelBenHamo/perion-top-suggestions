@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "start": "node main.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/EmanuelBenHamo/perion-top-suggestions#readme",
   "dependencies": {
     "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
     "jest": "^25.4.0"
   }
 }

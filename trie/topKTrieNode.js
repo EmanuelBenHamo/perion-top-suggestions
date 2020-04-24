@@ -1,4 +1,4 @@
-class TrieNode {
+class TopKTrieNode {
     constructor(key) {
         // the "key" value will be the character in sequence
         this.key = key;
@@ -15,4 +15,4 @@ class TrieNode {
     }
 }
 
-module.exports = TrieNode;
+module.exports = TopKTrieNode;
