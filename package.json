@@ -4,7 +4,7 @@
   "description": "Suggested solution to Perion interview task - search suggest",
   "main": "main.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "start": "node main.js"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/EmanuelBenHamo/perion-top-suggestions#readme",
   "dependencies": {
-    "csvtojson": "^2.0.10"
+    "csvtojson": "^2.0.10",
+    "jest": "^25.4.0"
   }
 }
