@@ -42,7 +42,7 @@ After that I wrote integration tests and with the help of Excel I knew to which 
 My solution relies on the **Trie** data structure.\
 \
 I've extended the basic trie data structure in the following way: \
-Each node in the trie will hold a topK array that will store the top k searched words in it's subtree.\
+Each node in the trie will hold a topK array that will store the top k searched words in its' subtree.\
 With that data structure, all we need to do when we search is to get to the node of the last letter in the prefix,\
  and to return the topK array in this node as the result. \
 \
