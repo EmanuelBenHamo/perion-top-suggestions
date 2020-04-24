@@ -29,3 +29,11 @@ Accessing to **http://localhost:3030/api/search/ca** will return:\
 "carpenter",
 "care"
 ]
+
+**About the tests:**\
+    In order to test my results, first I used Excel by Microsoft to sort and filter the searchTermsDB.csv file.\
+    After that I wrote integration tests and with the help of Excel I knew to which results to expect.
+
+**About the solution:** \
+    My solution relies on the **Trie** data structure.\
+    The **time complexity** of searching top suggestions for **word prefix with length k** is **O(k)**
