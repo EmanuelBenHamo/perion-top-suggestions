@@ -3,11 +3,15 @@
  
 #### How to use
 
-There are two options to use this app:
+There are three options to use this app:
 
- * **Remote:**\
+ * **Remote (without client site):**\
         Go to **https://search-suggest.herokuapp.com/api/search/YOUR-SEARCH-TERM-PREFIX** .\
         You will get an array of the (up to) top 10 search suggestions that match your search term prefix.
+* **Remote (with client site)**\
+       Go to **https://search-suggestion-client.herokuapp.com/index.html** .\
+       Type your search terms in the search box, and see the top suggestions below your search term.\
+       To watch the client site code, go to **https://github.com/EmanuelBenHamo/perion-top-suggestions-client**
  * **Local:**\
         Clone this repository and run: **'npm install'** in order to install all of the project dependencies.\
         Then you can run: **'npm run test'** in order to run all of the integration tests that has been written,\
