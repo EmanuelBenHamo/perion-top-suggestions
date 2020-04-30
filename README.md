@@ -9,7 +9,7 @@ There are three options to use this app:
         Go to **https://search-suggest.herokuapp.com/api/search/YOUR-SEARCH-TERM-PREFIX** .\
         You will get an array of the (up to) top 10 search suggestions that match your search term prefix.
 * **Remote (with client site)**\
-       Go to **https://search-suggestion-client.herokuapp.com/index.html** .\
+       Go to **https://search-suggestion-client.herokuapp.com** .\
        Type your search terms in the search box, and see the top suggestions below your search term.\
        To watch the client site code, go to **https://github.com/EmanuelBenHamo/perion-top-suggestions-client**
  * **Local:**\
